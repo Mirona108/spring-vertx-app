@@ -13,7 +13,7 @@ public class ArticleService {
     @Autowired
     private ArticleRepository articleRepository;
 
-    public List<Article> getAllArticle() {
+    public Iterable<Article> getAllArticle() {
         return articleRepository.findAll();
     }
 }
